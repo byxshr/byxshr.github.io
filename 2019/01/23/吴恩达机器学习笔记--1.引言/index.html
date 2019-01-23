@@ -90,7 +90,7 @@
 <meta property="og:image" content="https://github.com/byxshr/MarkdownPictures/raw/master/1.3_1.png">
 <meta property="og:image" content="https://github.com/byxshr/MarkdownPictures/raw/master/1.3_2.png">
 <meta property="og:image" content="https://github.com/byxshr/MarkdownPictures/raw/master/1.4_1.png">
-<meta property="og:updated_time" content="2019-01-23T08:25:34.941Z">
+<meta property="og:updated_time" content="2019-01-23T08:40:51.957Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="吴恩达机器学习笔记--1.引言">
 <meta name="twitter:description" content="1 引言1.2 机器学习是什么Arthur Samuel定义机器学习：在进行特定编程的情况下，给予计算机学习能力的领域。Tom Mitchell定义机器学习：一个好的学习问题定义如下，一个程序被认为能从经验E 中学习，解决任务T，达到性能度量值P，当且仅当有了经验E后，经过P评判，程序在处理T时的性能有所提升。类比机器学习运用于下棋问题，经验E就是程序上万次的自我练习的经验而任务T就是下棋。性能度">
@@ -387,7 +387,7 @@
       
 
       
-        <h2 id="1-引言"><a href="#1-引言" class="headerlink" title="1 引言"></a>1 引言</h2><h3 id="1-2-机器学习是什么"><a href="#1-2-机器学习是什么" class="headerlink" title="1.2 机器学习是什么"></a>1.2 机器学习是什么</h3><p>Arthur Samuel定义机器学习：在进行特定编程的情况下，给予计算机学习能力的领域。<br>Tom Mitchell定义机器学习：一个好的学习问题定义如下，一个程序被认为能从经验E 中学习，解决任务T，达到性能度量值P，当且仅当有了经验E后，经过P评判，程序在处理T时的性能有所提升。<br>类比机器学习运用于下棋问题，经验E就是程序上万次的自我练习的经验而任务T就是下棋。性能度量值P呢，就是它在与一些新的对手比赛时，赢得比赛的概率。<br>目前存在几种不同类型的学习算法，主要的两种类型被称为监督学习和无监督学习，监督学习这个想法是指，我们将教计算机如何去完成任务，而在无监督学习中，我们打算让它自己进行学习。</p>
+        <h2 id="1-引言"><a href="#1-引言" class="headerlink" title="1 引言"></a>1 引言</h2><h3 id="1-2-机器学习是什么"><a href="#1-2-机器学习是什么" class="headerlink" title="1.2 机器学习是什么"></a>1.2 机器学习是什么</h3><p>Arthur Samuel定义机器学习：在进行特定编程的情况下，给予计算机学习能力的领域。<br>Tom Mitchell定义机器学习：一个好的学习问题定义如下，一个程序被认为能从经验E 中学习，解决任务T，达到性能度量值P，当且仅当有了经验E后，经过P评判，程序在处理T时的性能有所提升。<br>类比机器学习运用于下棋问题，经验E就是程序上万次的自我练习的经验而任务T就是下棋。性能度量值P呢，就是它在与一些新的对手比赛时，赢得比赛的概率。<br><a id="more"></a><br>目前存在几种不同类型的学习算法，主要的两种类型被称为监督学习和无监督学习，监督学习这个想法是指，我们将教计算机如何去完成任务，而在无监督学习中，我们打算让它自己进行学习。</p>
 <h3 id="1-3-监督学习"><a href="#1-3-监督学习" class="headerlink" title="1.3 监督学习"></a>1.3 监督学习</h3><p>例子1：收集房价数据预测房价。<br><img src="https://github.com/byxshr/MarkdownPictures/raw/master/1.3_1.png" alt="房价预测"><br>监督学习指的就是我们给学习算法一个数据集,这个数据集由“正确答案”组成。在房价的例子中，我们给了一系列房子的数据，我们给定数据集中每个样本的正确价格，即它们实际的售价然后运用学习算法，算出更多的正确答案。用术语来讲，这叫做回归问题，我们试着推测出一个连续值的结果，即房子的价格。<br>例子2：推测乳腺癌良性与否。<br><img src="https://github.com/byxshr/MarkdownPictures/raw/master/1.3_2.png" alt="乳腺癌预测"><br>这个机器学习的问题就在于，你能否估算出肿瘤是恶性的或是良性的概率。用术语来讲，这是一个分类问题。<br>分类指的是，我们试着推测出离散的输出值：0 或1 良性或恶性，而事实上在分类问题中，输出可能不止两个值。<br>监督学习的基本思想是，我们数据集中的每个样本都有相应的“正确答案”。再根据这些样本作出预测，就像房子和肿瘤的例子中做的那样。我们还介绍了回归问题，即通过回归来推出一个连续的输出，之后我们介绍了分类问题，其目标是推出一组离散的结果。</p>
 <h3 id="1-4-无监督学习"><a href="#1-4-无监督学习" class="headerlink" title="1.4 无监督学习"></a>1.4 无监督学习</h3><p><img src="https://github.com/byxshr/MarkdownPictures/raw/master/1.4_1.png" alt="监督学习与无监督学习"><br>在无监督学习中，我们已知的数据。看上去有点不一样，不同于监督学习的数据的样子，即无监督学习中没有任何的标签或者是有相同的标签或者就是没标签。所以我们已知数据集，却不知如何处理，也未告知每个数据点是什么，别的都不知道，就是一个数据集。针对数据集，无监督学习就能判断出数据有两个不同的聚集簇，无监督学习算法可能会把这些数据分成两个不同的簇，所以叫做聚类算法。<br>聚类应用的一个例子就是在谷歌新闻中，谷歌新闻做的就是搜索非常多的新闻事件，自动地把它们聚类到一起。所以，这些新闻事件全是同一主题的，所以显示到一起。<br>其他无监督学习应用：DNA微观数据分析、组织大型计算机集群、社交网络的分析、市场分割、天文数据分析、鸡尾酒宴问题。</p>
 
@@ -422,8 +422,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/01/13/你好，Hexo/" rel="next" title="你好，Hexo">
-                <i class="fa fa-chevron-left"></i> 你好，Hexo
+              <a href="/2019/01/13/exp1/" rel="next" title="吴恩达机器学习 作业一">
+                <i class="fa fa-chevron-left"></i> 吴恩达机器学习 作业一
               </a>
             
           </div>
@@ -507,7 +507,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
