@@ -383,11 +383,15 @@
       
         
           
-            <h2 id="1-引言"><a href="#1-引言" class="headerlink" title="1 引言"></a>1 引言</h2><h3 id="1-2-机器学习是什么"><a href="#1-2-机器学习是什么" class="headerlink" title="1.2 机器学习是什么"></a>1.2 机器学习是什么</h3><p>Arthur Samuel定义机器学习：在进行特定编程的情况下，给予计算机学习能力的领域。<br>Tom Mitchell定义机器学习：一个好的学习问题定义如下，一个程序被认为能从经验E 中学习，解决任务T，达到性能度量值P，当且仅当有了经验E后，经过P评判，程序在处理T时的性能有所提升。<br>类比机器学习运用于下棋问题，经验E就是程序上万次的自我练习的经验而任务T就是下棋。性能度量值P呢，就是它在与一些新的对手比赛时，赢得比赛的概率。<br>目前存在几种不同类型的学习算法，主要的两种类型被称为监督学习和无监督学习，监督学习这个想法是指，我们将教计算机如何去完成任务，而在无监督学习中，我们打算让它自己进行学习。</p>
-<h3 id="1-3-监督学习"><a href="#1-3-监督学习" class="headerlink" title="1.3 监督学习"></a>1.3 监督学习</h3><p>例子1：收集房价数据预测房价。<br><img src="https://github.com/byxshr/MarkdownPictures/raw/master/1.3_1.png" alt="房价预测"><br>监督学习指的就是我们给学习算法一个数据集,这个数据集由“正确答案”组成。在房价的例子中，我们给了一系列房子的数据，我们给定数据集中每个样本的正确价格，即它们实际的售价然后运用学习算法，算出更多的正确答案。用术语来讲，这叫做回归问题，我们试着推测出一个连续值的结果，即房子的价格。<br>例子2：推测乳腺癌良性与否。<br><img src="https://github.com/byxshr/MarkdownPictures/raw/master/1.3_2.png" alt="乳腺癌预测"><br>这个机器学习的问题就在于，你能否估算出肿瘤是恶性的或是良性的概率。用术语来讲，这是一个分类问题。<br>分类指的是，我们试着推测出离散的输出值：0 或1 良性或恶性，而事实上在分类问题中，输出可能不止两个值。<br>监督学习的基本思想是，我们数据集中的每个样本都有相应的“正确答案”。再根据这些样本作出预测，就像房子和肿瘤的例子中做的那样。我们还介绍了回归问题，即通过回归来推出一个连续的输出，之后我们介绍了分类问题，其目标是推出一组离散的结果。</p>
-<h3 id="1-4-无监督学习"><a href="#1-4-无监督学习" class="headerlink" title="1.4 无监督学习"></a>1.4 无监督学习</h3><p><img src="https://github.com/byxshr/MarkdownPictures/raw/master/1.4_1.png" alt="监督学习与无监督学习"><br>在无监督学习中，我们已知的数据。看上去有点不一样，不同于监督学习的数据的样子，即无监督学习中没有任何的标签或者是有相同的标签或者就是没标签。所以我们已知数据集，却不知如何处理，也未告知每个数据点是什么，别的都不知道，就是一个数据集。针对数据集，无监督学习就能判断出数据有两个不同的聚集簇，无监督学习算法可能会把这些数据分成两个不同的簇，所以叫做聚类算法。<br>聚类应用的一个例子就是在谷歌新闻中，谷歌新闻做的就是搜索非常多的新闻事件，自动地把它们聚类到一起。所以，这些新闻事件全是同一主题的，所以显示到一起。<br>其他无监督学习应用：DNA微观数据分析、组织大型计算机集群、社交网络的分析、市场分割、天文数据分析、鸡尾酒宴问题。</p>
-
-          
+          1 引言1.2 机器学习是什么Arthur Samuel定义机器学习：在进行特定编程的情况下，给予计算机学习能力的领域。Tom Mitchell定义机器学习：一个好的学习问题定义如下，一个程序被认为能从经验E 中学习，解决任务T，达到性能度量值P，当且仅当有了经验E后，经过P评判，程序在处理T时的性
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/01/23/吴恩达机器学习笔记--1.引言/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -527,9 +531,16 @@
       
         
           
-            <p>使用Hexo,是非常简单的一件事。</p>
+          使用Hexo,是非常简单的一件事。
 
           
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/01/13/你好，Hexo/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -669,97 +680,16 @@
       
         
           
-            <h2 id="吴恩达机器学习作业记录"><a href="#吴恩达机器学习作业记录" class="headerlink" title="吴恩达机器学习作业记录"></a><strong>吴恩达机器学习作业记录</strong></h2><h3 id="exp1"><a href="#exp1" class="headerlink" title="exp1"></a>exp1</h3><h4 id="costCompute"><a href="#costCompute" class="headerlink" title="costCompute:"></a>costCompute:</h4><p>代价函数是所有建模误差的平方和，即：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">J(\theta_0,\theta_1,...\theta_n) = \frac&#123;1&#125;&#123;2m&#125;\sum_&#123;i=1&#125;^&#123;m&#125;(h_&#123;\theta&#125;(x^&#123;(i)&#125;)-y^&#123;(i)&#125;)^&#123;2&#125;</span><br></pre></td></tr></table></figure>
-<p>其中<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">h_\theta(x) = \theta^TX = \theta_0 + \theta_1x_1 + \theta_2x_2+...+\theta_nx_n</span><br></pre></td></tr></table></figure></p>
-<p><em>np.power(x1,x2)</em> 数组的元素分别求n次方，x2可以是数字，也可以是数组，但是x1和x2的列数要相同。<br>`</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>x1 = range(6)<br>x1 [0, 1, 2, 3, 4, 5]<br>np.power(x1, 3)<br> array([ 0, 1, 8, 27, 64, 125])</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>x2 = [1.0, 2.0, 3.0, 3.0, 2.0, 1.0]<br>np.power(x1, x2)<br>array([ 0., 1., 8., 27., 16., 5.])<br> `</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<p><em>np.sum(a, axis=None, dtype=None, out=None, keepdims=np._NoValue)</em> :<br>a是要进行加法运算的向量/数组/矩阵<br>axis的值可以为None,也可以为整数和元组<br>其形参的注释如下:<br>a : array_like<br>Elements to sum. (用于进行加法运算的数组形式的元素)<br>axis : None or int or tuple of ints, optional<br>Axis or axes along which a sum is performed. The default,<br>axis=None, will sum all of the elements of the input array.<br>(如果axis的为None,则将数组中的每一个元素都加起来)<br>If axis is negative it counts from the last to the first axis.<br>If axis is a tuple of ints, a sum is performed on all of the axes<br>specified in the tuple instead of a single axis or all the axes as<br>before.<br>当axis为0时,是压缩行,即将每一列的元素相加,将矩阵压缩为一行 当axis为1时,是压缩列,即将每一行的元素相加,将矩阵压缩为一列 </p>
-<p><em>np.dot(x1,x2)</em> 返回的是两个数组的点积(dot product)<br>1.如果处理的是一维数组，则得到的是两数组的內积<br>2.如果是二维数组（矩阵）之间的运算，则得到的是矩阵积（mastrix product）。<br>3.dot()函数可以通过numpy库调用，也可以由数组实例对象进行调用。a.dot(b) 与 np.dot(a,b)效果相同。矩阵积计算不遵循交换律,np.dot(a,b) 和 np.dot(b,a) 得到的结果是不一样的。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">import numpy as np</span><br><span class="line"></span><br><span class="line">def compute_cost(X, y, theta):    </span><br><span class="line">    # Initialize some useful values    </span><br><span class="line">    m = y.size</span><br><span class="line">    cost = 0    </span><br><span class="line">    # ===================== Your Code Here =====================   </span><br><span class="line">    # Instructions : Compute the cost of a particular choice of theta.    </span><br><span class="line">    #                You should set the variable &quot;cost&quot; to the correct value.    </span><br><span class="line">    inner = (np.dot(theta, X) - y) ** 2    </span><br><span class="line">    cost = np.sum(inner) / (2*m)    # ==========================================================    </span><br><span class="line">    return cost</span><br></pre></td></tr></table></figure></p>
-<h4 id="featureNormalize"><a href="#featureNormalize" class="headerlink" title="featureNormalize"></a>featureNormalize</h4><p>特征标准化的目的是使特征具有相近的尺度，这将帮助梯度下降算法更快地收敛。<br>最简单的方法是令：<img src="https://github.com/byxshr/MarkdownPictures/raw/master/Image.png" alt="Aaron Swartz"></p>
-<p><em>np.zeros(shape, dtype=float, order=’C’)</em> :<br>返回：返回来一个给定形状和类型的用0填充的数组；<br>参数：shape:形状dtype:数据类型，可选参数，默认numpy.float64</p>
-<p>np.zeros(5)<br>array([ 0., 0., 0., 0., 0.])</p>
-<p>np.zeros((5,), dtype=np.int)<br>array([0, 0, 0, 0, 0])</p>
-<p>np.zeros((2, 1))<br>array([[ 0.],<br>    [ 0.]])</p>
-<p>s = (2,2)<br>np.zeros(s)<br>array([[ 0., 0.],<br>    [ 0., 0.]])</p>
-<p><em>np.mean()</em> :计算矩阵均值</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>a = np.array([[1, 2], [3, 4]])<br>np.mean(a) # 将上面二维矩阵的每个元素相加除以元素个数（求平均数）<br>2.5<br>np.mean(a, axis=0) # axis=0，计算每一列的均值<br>array([ 2.,  3.])<br>np.mean(a, axis=1) # 计算每一行的均值<br>array([ 1.5,  3.5])</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<p><em>np.std()</em> ：计算矩阵标准差</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>a = np.array([[1, 2], [3, 4]])<br>np.std(a) # 计算全局标准差<br>1.1180339887498949<br>np.std(a, axis=0) # axis=0计算每一列的标准差<br>array([ 1.,  1.])<br>np.std(a, axis=1) # 计算每一行的标准差<br>array([ 0.5,  0.5])</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">import numpy as np</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def feature_normalize(X):</span><br><span class="line">    # You need to set these values correctly</span><br><span class="line">    n = X.shape[1]  # the number of features</span><br><span class="line">    X_norm = X</span><br><span class="line">    mu = np.zeros(n)</span><br><span class="line">    sigma = np.zeros(n)</span><br><span class="line"></span><br><span class="line">    # ===================== Your Code Here =====================</span><br><span class="line">    # Instructions : First, for each feature dimension, compute the mean</span><br><span class="line">    #                of the feature and subtract it from the dataset,</span><br><span class="line">    #                storing the mean value in mu. Next, compute the</span><br><span class="line">    #                standard deviation of each feature and divide</span><br><span class="line">    #                each feature by its standard deviation, storing</span><br><span class="line">    #                the standard deviation in sigma</span><br><span class="line">    #</span><br><span class="line">    #                Note that X is a 2D array where each column is a</span><br><span class="line">    #                feature and each row is an example. You need</span><br><span class="line">    #                to perform the normalization separately for</span><br><span class="line">    #                each feature.</span><br><span class="line">    #</span><br><span class="line">    # Hint: You might find the &apos;np.mean&apos; and &apos;np.std&apos; functions useful.</span><br><span class="line">    #       To get the same result as Octave &apos;std&apos;, use np.std(X, 0, ddof=1)</span><br><span class="line">    #</span><br><span class="line">    mu = np.mean(X, axis=0)</span><br><span class="line">    sigma = np.std(X, axis=0, ddof=1)</span><br><span class="line">    X_norm = (X - mu) / sigma</span><br><span class="line">    </span><br><span class="line"></span><br><span class="line">  #=========================================================</span><br><span class="line"></span><br><span class="line">    return X_norm, mu, sigma</span><br></pre></td></tr></table></figure>
-<h4 id="gradientDescent"><a href="#gradientDescent" class="headerlink" title="gradientDescent"></a>gradientDescent</h4><p>对于线性回归问题运用梯度下降法，关键在于求出代价函数的导数，即：<br><img src="https://github.com/byxshr/MarkdownPictures/raw/master/Image%20%5B2%5D.png" alt="Aaron Swartz"><br><img src="https://github.com/byxshr/MarkdownPictures/raw/master/Image%20%5B3%5D.png" alt="Aaron Swartz"><br>则算法改写成：</p>
-<p><img src="https://github.com/byxshr/MarkdownPictures/raw/master/Image%20%5B4%5D.png" alt="Aaron Swartz"></p>
-<p><em>np.flatten()</em> : 返回一个折叠成一维的数组。但是该函数只能适用于numpy对象，即array或者mat，普通的list列表是不行的。<br>1、用于array对象:<br>`</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>from numpy import *<br>a=array([[1,2],[3,4],[5,6]])  ###此时a是一个array对象<br>a<br>array([[1,2],[3,4],[5,6]])</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>a.flatten()<br>array([1,2,3,4,5,6])<br><code>2.用于mat对象：</code><br>a=mat([[1,2,3],[4,5,6]])<br>a<br>matrix([[1, 2, 3],<br>        [4, 5, 6]])<br><br>a.flatten()<br>matrix([[1, 2, 3, 4, 5, 6]])<br><br>`</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<p><em>np.newaxis</em> : 作用就是在这一位置增加一个一维，这一位置指的是np.newaxis所在的位置，比较抽象，需要配合例子理解。<br>`</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>x1 = np.array([1, 2, 3, 4, 5]) </p>
-</blockquote>
-</blockquote>
-</blockquote>
-<p>#the shape of x1 is (5,) x1_new = x1[:, np.newaxis] </p>
-<p>#now, the shape of x1_new is (5, 1) </p>
-<p>#array([[1], </p>
-<p>#[2], </p>
-<p>#[3], </p>
-<p>#[4], </p>
-<p>#[5]])<br>x1_new = x1[np.newaxis,:] </p>
-<p>#now, the shape of x1_new is (1, 5) </p>
-<p>#array([[1, 2, 3, 4, 5]])<br>`</p>
-<p>例2：<br>`</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>In [124]: arr = np.arange(5*5).reshape(5,5)<br>In [125]: arr.shape<br>Out[125]: (5, 5) # promoting 2D array to a 5D array<br>In [126]: arr_5D = arr[np.newaxis, …, np.newaxis, np.newaxis]<br>In [127]: arr_5D.shape<br>Out[127]: (1, 5, 5, 1, 1)<br>`<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">import numpy as np</span><br><span class="line">from computeCost import *</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def gradient_descent(X, y, theta, alpha, num_iters):</span><br><span class="line">    # Initialize some useful values</span><br><span class="line">    m = y.size</span><br><span class="line">    J_history = np.zeros(num_iters)</span><br><span class="line"></span><br><span class="line">    for i in range(0, num_iters):</span><br><span class="line">        # ===================== Your Code Here =====================</span><br><span class="line">        # Instructions : Perform a single gradient step on the parameter vector theta</span><br><span class="line">        #</span><br><span class="line">        # Hint: X.shape = (97, 2), y.shape = (97, ), theta.shape = (2, )</span><br><span class="line">        error = np.dot(X, theta).flatten() - y</span><br><span class="line">        theta -= (alpha/m)*np.sum(X*error[:, np.newaxis], 0)</span><br><span class="line"></span><br><span class="line">        # ===========================================================</span><br><span class="line">        # Save the cost every iteration</span><br><span class="line">        J_history[i] = compute_cost(X, y, theta)</span><br><span class="line"></span><br><span class="line">    return theta, J_history</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def gradient_descent_multi(X, y, theta, alpha, num_iters):</span><br><span class="line">    # Initialize some useful values</span><br><span class="line">    m = y.size</span><br><span class="line">    J_history = np.zeros(num_iters)</span><br><span class="line"></span><br><span class="line">    for i in range(0, num_iters):</span><br><span class="line">        # ===================== Your Code Here =====================</span><br><span class="line">        # Instructions : Perform a single gradient step on the parameter vector theta</span><br><span class="line">        #</span><br><span class="line">        error = np.dot(X, theta).flatten() - y</span><br><span class="line">        theta -= (alpha / m) * np.sum(X * error[:, np.newaxis], 0)</span><br><span class="line"></span><br><span class="line">        # ===========================================================</span><br><span class="line">        # Save the cost every iteration</span><br><span class="line">        J_history[i] = compute_cost(X, y, theta)</span><br><span class="line"></span><br><span class="line">    return theta, J_history</span><br></pre></td></tr></table></figure></p>
-</blockquote>
-</blockquote>
-</blockquote>
-<h4 id="normalEqn"><a href="#normalEqn" class="headerlink" title="normalEqn"></a>normalEqn</h4><p>正规方程是通过求解下面的方程来找出使得代价函数最小的参数的：<br><img src="https://github.com/byxshr/MarkdownPictures/raw/master/Image%20%5B5%5D.png" alt="Aaron Swartz"><br>假设我们的训练集特征矩阵为X（包含了x0 = 1）并且我们的训练集结果为向量y，则利<br>用正规方程解出向量<br><img src="https://github.com/byxshr/MarkdownPictures/raw/master/Image%20%5B6%5D.png" alt="Aaron Swartz"></p>
-<p><em>np.transpose(a, axes=None)</em> :<br>参数 a:输入数组 axis: int类型的列表，这个参数是可选的。默认情况下，反转的输入数组的维度，当给定这个参数时，按照这个参数所定的值进行数组变换。<br>返回值 p:ndarray 返回转置过后的原数组的视图。<br><em>np.linalg</em> :numpy.linalg模块包含线性代数的函数。使用这个模块，可以计算逆矩阵、求特征值、解线性方程组以及求解行列式等。<br><a href="https://www.cnblogs.com/xieshengsen/p/6836430.html" target="_blank" rel="noopener">numpy linalg模块</a><br>np.linalg.inv(A)：求矩阵A的逆矩阵。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">import numpy as np</span><br><span class="line"></span><br><span class="line">def normal_eqn(X, y):</span><br><span class="line">    theta = np.zeros((X.shape[1], 1))</span><br><span class="line"></span><br><span class="line">    # ===================== Your Code Here =====================</span><br><span class="line">    # Instructions : Complete the code to compute the closed form solution</span><br><span class="line">    #                to linear regression and put the result in theta</span><br><span class="line">    #</span><br><span class="line">    Xt = np.transpose(X)</span><br><span class="line">    theta = np.linalg.pinv(Xt.dot(X)).dot(Xt).dot(y)</span><br><span class="line"></span><br><span class="line">    return theta</span><br></pre></td></tr></table></figure></p>
-<h4 id="plotDate"><a href="#plotDate" class="headerlink" title="plotDate"></a>plotDate</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">import matplotlib.pyplot as plt</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def plot_data(x, y):</span><br><span class="line">    # ===================== Your Code Here =====================</span><br><span class="line">    # Instructions : Plot the training data into a figure using the matplotlib.pyplot</span><br><span class="line">    #                using the &quot;plt.scatter&quot; function. Set the axis labels using</span><br><span class="line">    #                &quot;plt.xlabel&quot; and &quot;plt.ylabel&quot;. Assume the population and revenue data</span><br><span class="line">    #                have been passed in as the x and y.</span><br><span class="line"></span><br><span class="line">    # Hint : You can use the &apos;marker&apos; parameter in the &quot;plt.scatter&quot; function to change the marker type (e.g. &quot;x&quot;, &quot;o&quot;).</span><br><span class="line">    #        Furthermore, you can change the color of markers with &apos;c&apos; parameter.</span><br><span class="line">    plt.scatter(x, y, c=&apos;r&apos;, marker=&quot;x&quot;)</span><br><span class="line">    plt.xlabel(&apos;population&apos;)</span><br><span class="line">    plt.ylaber(&apos;profit&apos;)</span><br><span class="line">    # ===========================================================</span><br><span class="line"></span><br><span class="line">    plt.show()</span><br></pre></td></tr></table></figure>
-<p>np.r_是按列连接两个矩阵，就是把两矩阵上下相加，要求列数相等，类似于pandas中的concat()。np.c_是按行连接两个矩阵，就是把两矩阵左右相加，要求行数相等，类似于pandas中的merge()。</p>
-
-          
+          吴恩达机器学习作业记录exp1costCompute:代价函数是所有建模误差的平方和，即：
+1J(\theta_0,\theta_1,...\theta_n) = \frac&#123;1&#125;&#123;2m&#125;\sum_&#123;i=1&#125;^&#123;m&#125;(h
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/01/13/exp1/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
